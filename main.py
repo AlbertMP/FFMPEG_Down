@@ -19,6 +19,7 @@ class MainWindow(QMainWindow):
     def handle_click(self):
         m3u8Link = self.ui.m3u8Link.text()
         fileName = self.ui.fileName.text()
+
         # Make sure ffmpeg has been installed system wide before use terminal command
         path = self.open_file()
         if path != '':
